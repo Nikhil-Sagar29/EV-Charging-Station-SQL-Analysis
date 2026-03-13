@@ -27,9 +27,4 @@ WITH city_ports AS (
 SELECT *,
        CAST(occupied_ports * 1.0 / total_ports AS DECIMAL(10,3)) AS utilization_ratio,
        RANK() OVER (ORDER BY occupied_ports DESC) AS congestion_rank
-
-
-
-
-  
 FROM city_ports;
