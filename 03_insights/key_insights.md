@@ -16,27 +16,34 @@ Key Insights from EV Charging Station Analysis
 - Charging demand increases significantly during peak commuting hours, leading to higher wait times and congestion.
 - Stations with sustained high utilization during peak hours may require additional charging ports or load balancing strategies.
 
-4. Location & Amenity Impact
+4. Charging Station Stress Insights
+   --------------------------------
+- Stations with high utilization and long wait times create significant customer stress.
+- Congestion risk increases rapidly when utilization exceeds optimal operating levels.
+- Some stations experience temporary stress spikes during peak hours or events.
+- Infrastructure expansion should prioritize high-stress locations first.
+
+5. Location & Amenity Impact
    ----------------------------
 - Stations located in commercial areas and high-amenity zones generally show higher utilization rates.
 - Availability of nearby amenities encourages longer stays and increases charging demand.
 
-5. Charger Type Performance
+6. Charger Type Performance
    ----------------------------
 - High-power fast chargers tend to experience higher utilization compared to slower charging units.
 - Pricing differences do not significantly reduce demand for fast charging services.
 
-6. Temporal Charging Behavior
+7. Temporal Charging Behavior
    ------------------------------
 - Charging patterns vary across peak vs off-peak periods and weekday vs weekend usage.
 - Weekend sessions tend to have longer charging durations, while weekdays show higher turnover rates.
 
-7. Weather Impact
+8. Weather Impact
    ------------------------------
 - Extreme weather conditions may slightly reduce charging efficiency and influence utilization patterns.
 - Weather-based demand changes highlight the importance of environment-aware infrastructure planning.
 
-8. Local Event Demand Impact
+9. Local Event Demand Impact
    ---------------------------------
 - Large public events such as concerts and festivals generate temporary spikes in charging demand.
 - Stations near event venues experience higher utilization and wait times, indicating localized infrastructure pressure.
