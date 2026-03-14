@@ -119,6 +119,7 @@ A Charging Stress Indicator was developed to identify stations experiencing high
 Stations were categorized into stress levels:
 ----------------------------------------------
 Stress Level Condition
+
 🟢 Low Stress - Low wait time and moderate utilization
 
 🟡 Moderate Stress - Increasing utilization with moderate wait time
