@@ -31,16 +31,16 @@ ev-charging-station-sql-analysis
 The dataset contains hourly operational records of EV charging stations.
 
 Key Attributes
-Column	Description
-station_id	Unique station identifier
-city	Location of charging station
-charger_type	Type of charger installed
-ports_total	Total charging ports
-ports_occupied	Ports currently in use
-utilization_rate	Station usage percentage
-estimated_wait_time_mins	Average wait time
-weather_condition	Weather during charging
-local_event	Nearby events impacting demand
+Column                   -  Description
+station_id	             -  Unique station identifier
+city	                   -  Location of charging station
+charger_type 	          -  Type of charger installed
+ports_total	             -  Total charging ports
+ports_occupied	          -  Ports currently in use
+utilization_rate	       -  Station usage percentage
+estimated_wait_time_mins -  Average wait time
+weather_condition	       -  Weather  during charging
+local_event	             -  Nearby events impacting demand
 
 📦 Dataset Size: ~1.3 Million Records
 🏙 Stations Covered: 150
@@ -50,12 +50,15 @@ local_event	Nearby events impacting demand
 Initial SQL checks were performed to ensure data reliability.
 
 ✔ Checked for null values
+
 ✔ Checked for duplicate station records
+
 ✔ Validated port usage does not exceed capacity
+
 ✔ Verified categorical values consistency
 
 Example query:
-
+---------------
 SELECT *
 FROM ev_charging_station_data
 WHERE ports_occupied > ports_total;
@@ -90,6 +93,29 @@ Analyzes:
 
 Key goal: Detect peak demand periods.
 
+⚠️ Customer Charging Stress Analysis
+-------------------------------------
+
+This section evaluates charging station congestion and customer stress levels based on:
+1. Utilization Rate
+2. Ports Occupied
+3. Estimated Wait Time
+4. Charging Demand Patterns
+A Charging Stress Indicator was developed to identify stations experiencing high operational pressure.
+
+Stations were categorized into stress levels:
+----------------------------------------------
+Stress Level Condition
+🟢 Low Stress - Low wait time and moderate utilization
+
+🟡 Moderate Stress - Increasing utilization with moderate wait time
+
+🟠 High Stress	-   High utilization and increasing queue time
+
+🔴 Critical Stress - Severe congestion and long wait times
+
+This analysis helps identify stations that require infrastructure expansion or operational optimization.
+
 🌦 Weather Impact
 -------------------------
 Investigates how weather affects:
@@ -121,11 +147,17 @@ Key goal: Identify temporary infrastructure stress.
 🔍 Key Insights
 --------------------
 
-📌 High utilization stations indicate potential infrastructure expansion opportunities.
-📌 Peak hour congestion significantly increases wait times at busy stations.
-📌 Commercial areas tend to experience higher charging demand compared to residential zones.
-📌 Large local events create temporary spikes in EV charging demand.
-📌 Fast chargers typically maintain higher utilization despite premium pricing.
+📌 Charging congestion is strongly linked to utilization levels above 50%, where wait times begin increasing significantly.
+
+📌 Stations operating near full capacity experience high customer stress levels due to limited port availability.
+
+📌 Peak-hour demand creates temporary congestion spikes, especially in high-traffic urban areas.
+
+📌 Fast chargers tend to reduce customer wait times despite higher utilization levels.
+
+📌 Stations located in commercial areas show both higher demand and higher customer stress during peak hours.
+
+📌 Large public events can temporarily push stations into critical stress levels due to sudden demand spikes.
 
 🛠 Tools Used
 ---------------------
