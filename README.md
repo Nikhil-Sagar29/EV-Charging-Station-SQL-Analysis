@@ -10,30 +10,29 @@ The analysis focuses on identifying usage trends, congestion periods, infrastruc
 ---------------------
 ev-charging-station-sql-analysis
 
-│
-    ├── 01_dataset
+├── 01_dataset
 
-├   ├── 02_sql_queries
+├  └── * Ev_charging_station_data
 
-│    ── 01_data_cleaning.sql
+├── 02_sql_queries
 
-│    ── 02_infrastructure_analysis.sql
+│    └── * data_cleaning.sql
 
-│    ── 03_utilization_analysis.sql
+│   └──  * infrastructure_analysis.sql
 
-│    ── 04_peak_hour_analysis.sql
+│   └── *  utilization_analysis.sql
 
-│    ── 05_weather_analysis.sql
+│   └── * peak_hour_analysis.sql
 
-│    ── 06_station_stress_analysis.sql
+│   └── * weather_analysis.sql
 
-│
+│    └── * station_stress_analysis.sql
+
 ├── 03_insights
 
-│   ── key_insights.md
+│   └── * key_insights.md
 
-│
-└── README.md
+│── README.md
 
 🧾 Dataset Overview
 --------------------
